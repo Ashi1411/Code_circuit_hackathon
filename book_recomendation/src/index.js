@@ -4,37 +4,19 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Pages/Home';
+import Favourite from './Components/Favourite';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let allRoutes = createBrowserRouter(
   [
-    // static routing
     {
       path:'/',
       element:<Home></Home>
+    },
+    {
+      path:'favourites',
+      element:<Favourite></Favourite>
     }
-    // {
-    //   path:'about-us',
-    //   element:<About></About>
-    // },
-    // {
-    //   path:'course',
-    //   element:<Course></Course>
-    // },
-    // {
-    //   path:'blog',
-    //   element:<Blog></Blog>
-    // },
-    // // dynamic routing
-    // {
-    //   path:'blog/:id',
-    //   element:<BlogDetails></BlogDetails>
-    // },
-    // // Error Page
-    // {
-    //   path:'*',
-    //   element:<Error404></Error404>
-    // }
   ]
 )
 
