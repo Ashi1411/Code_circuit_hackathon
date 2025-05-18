@@ -1,0 +1,18 @@
+/* style.css or Tailwind CSS override */
+.tippy-box[data-theme~='light-border'] {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  padding: 6px 10px;
+}
+
+/* style.css */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@import 'tippy.js/dist/tippy.css';
